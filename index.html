@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Agenda Digital</h1>
+    </nav>
+    <div class="container">
+        <h2>Mis Eventos</h2>
+        <form id="event-form">
+            <input type="text" id="event-title" placeholder="Título del evento" required>
+            <input type="date" id="event-date" required>
+            <button type="submit">Agregar Evento</button>
+        </form>
+        <ul id="event-list"></ul>
+    </div>
+    <div class="container">
+        <h2>Lista de Eventos</h2>
+        <ul id="event-list"></ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
