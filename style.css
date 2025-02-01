@@ -1,37 +1,55 @@
+/* Estilos generales para la página */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Fuente predeterminada */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Color de fondo */
 }
 
+/* Estilos de la barra de navegación */
 .navbar {
-    background: #333;
-    color: white;
+    background: #333; /* Color de fondo oscuro */
+    color: white; /* Color del texto */
     text-align: center;
     padding: 15px;
 }
 
+/* Contenedor principal */
 .container {
     width: 50%;
     margin: 20px auto;
     background: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
+/* Estilos del formulario */
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 10px; /* Espaciado entre los elementos */
 }
 
+/* Estilos generales para inputs y botones */
 input, button {
     padding: 10px;
     font-size: 16px;
 }
 
+/* Botón para agregar eventos */
+.add-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background: #218838; /* Color más oscuro al pasar el cursor */
+}
+
+/* Botones de acción (editar, eliminar, completar) */
 button {
     border: none;
     cursor: pointer;
@@ -39,41 +57,38 @@ button {
     border-radius: 5px;
 }
 
-.add-btn {
-    background: #28a745;
-    color: white;
-}
-
-.add-btn:hover {
-    background: #218838;
-}
-
+/* Estilo para el botón de edición */
 .edit-btn {
     background: #007bff;
     color: white;
     margin-right: 5px;
 }
 
+/* Estilo para el botón de eliminación */
 .delete-btn {
     background: #dc3545;
     color: white;
 }
 
+/* Estilo para el botón de completar */
 .complete-btn {
     background: #ffc107;
     color: black;
     margin-right: 5px;
 }
 
+/* Efecto de opacidad al pasar el cursor sobre los botones */
 button:hover {
     opacity: 0.8;
 }
 
+/* Lista de eventos */
 ul {
     list-style: none;
     padding: 0;
 }
 
+/* Estilos para cada evento en la lista */
 li {
     background: #ddd;
     padding: 10px;
@@ -84,6 +99,7 @@ li {
     border-radius: 5px;
 }
 
+/* Estilo para eventos completados (tachado y en gris) */
 .completed {
     text-decoration: line-through;
     color: gray;
